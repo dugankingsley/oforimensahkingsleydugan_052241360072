@@ -1,0 +1,111 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Payment Form</title>
+
+
+<ul class="siderbarMenuInner">
+    
+    
+</ul>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333333;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #28c9d4;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="file"] {
+            display: block;
+            margin-bottom: 20px;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fees Payment</h1>
+    <p>Please fill out the form below to make your payment:</p>
+    <form action="process_payment.php" method="post" enctype="multipart/form-data">
+        
+        <div>
+            <label for="amount">Payment Amount:</label>
+            <input type="text" id="amount" name="payment_amount" required>
+            
+        </div>
+        
+        <div>
+            
+            <label for="method">Payment Method:</label>
+            <select id="method" name="payment_method" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="bank_transfer">Bank Transfer</option>
+                <option value="mobile money">momo</option>
+            </select>
+            
+        </div>
+        <div>
+            <label for="picture">Upload Your Picture:</label>
+            <input type="file" id="picture" name="user_picture" accept="image/*">
+        </div>
+        <button type="submit">Submit Payment</button>
+    </form>
+
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Back Button Example</title>
+    </head>
+    <body>
+         
+        <a href="index.html" class="back-button">Back to homepage</a>
+        
+    <style>
+        .back-button {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #189cc4;
+            color: black;
+            border-radius: 5px;
+            margin-bottom: 20px; /* Adjust as needed */
+        }
+        
+        .back-button:hover {
+            background-color: #ddd;
+        }
+    </style>
+        
+
+   
+    
+    
+                                
+</body>
+</html>
